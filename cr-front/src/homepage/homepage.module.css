@@ -1,0 +1,13 @@
+/* Header.tsx */
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.authorization-wrapper{
+    display: flex;
+}
