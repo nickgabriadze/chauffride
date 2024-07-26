@@ -1,12 +1,15 @@
 import Homepage from "./homepage/Homepage.tsx";
+import {BrowserRouter} from "react-router-dom";
 
 function App() {
 
-  return (
-    <>
-    <Homepage />
-    </>
-  )
+    return (
+        <>
+            <BrowserRouter>
+                <Homepage/>
+            </BrowserRouter>
+        </>
+    )
 }
 
 export default App
