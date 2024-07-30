@@ -11,5 +11,17 @@ html{
 }
 :root{
     --color-main-white: #F0F2F5;
+    --color-main-white-darker: #d6d6dc;
+    --color-main-black-lighter: rgba(47, 49, 64, 0.5);
     --color-main-black: #2f3140
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }

@@ -1,0 +1,49 @@
+.registration{
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 50%;
+    width: 40%;
+    max-width: 80%;
+}
+
+.logo{
+    margin:auto;
+}
+
+
+.username{
+    display: flex;
+    gap:8px;
+}
+
+.name, .email{
+    border: none;
+    width: 100%;
+}
+
+.name, .email{
+    outline: 1px solid var(--color-main-black);
+    border-radius: 4px;
+    padding: 10px;
+
+
+}
+
+
+.reg-btn{
+    border: none;
+    padding: 10px;
+    background-color: var(--color-main-black);
+    color: var(--color-main-white);
+    border-radius: 4px;
+    transition: all 300ms linear;
+    cursor: pointer;
+}
+
+.reg-btn:hover{
+    background-color: var(--color-main-white);
+    outline: 1px solid var(--color-main-black);
+    color: var(--color-main-black);
+}

@@ -1,12 +1,16 @@
 import Homepage from "./homepage/Homepage.tsx";
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import AuthPage from "./authentication/AuthPage.tsx";
 
 function App() {
 
     return (
         <>
             <BrowserRouter>
-                <Homepage/>
+                <Routes>
+                    <Route path="/" element={<Homepage />} />
+                    <Route path="/register" element={<AuthPage />} />
+                </Routes>
             </BrowserRouter>
         </>
     )
