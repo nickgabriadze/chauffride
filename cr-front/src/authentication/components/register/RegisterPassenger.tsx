@@ -1,29 +1,35 @@
-import userRegistrationCSS from './register.module.css'
+import registrationCSS from './register.module.css'
 
 
 export function RegisterPassenger() {
 
-    return <form className={userRegistrationCSS['registration']}>
-        <div className={userRegistrationCSS['username']}>
-            <input className={userRegistrationCSS['name']} name={"First Name"} type={'text'}
+    return <form className={registrationCSS['registration']}>
+        <div className={registrationCSS['username']}>
+            <input className={registrationCSS['name']} name={"First Name"} type={'text'}
+                   required
                    placeholder={"First Name"}/>
-            <input className={userRegistrationCSS['name']} name={"Last Name"} type={'text'} placeholder={"Last Name"}/>
+            <input className={registrationCSS['name']}
+                   required
+                   name={"Last Name"} type={'text'} placeholder={"Last Name"}/>
         </div>
-        <input type={"email"} className={userRegistrationCSS['email']} name={"email"}
+        <input type={"email"} className={registrationCSS['email']}
+               required
+               name={"email"}
                placeholder={"example@company.com"}/>
 
-        <input className={userRegistrationCSS['email']}
+        <input className={registrationCSS['email']}
                autoComplete={"true"}
+               required
                name={"new-password"} type={'password'}
                placeholder={"Password"}/>
-        <input className={userRegistrationCSS['email']}
+        <input className={registrationCSS['email']}
                autoComplete={"true"}
-
+               required
                name={"new-password"} type={'password'}
                placeholder={"Repeat password"}/>
 
 
-        <button className={userRegistrationCSS['reg-btn']} type={"submit"}>Register</button>
+        <button className={registrationCSS['reg-btn']} type={"submit"}>Continue</button>
     </form>
 
 }

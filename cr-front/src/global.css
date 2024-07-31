@@ -13,7 +13,9 @@ html{
     --color-main-white: #F0F2F5;
     --color-main-white-darker: #d6d6dc;
     --color-main-black-lighter: rgba(47, 49, 64, 0.5);
-    --color-main-black: #2f3140
+    --color-main-black: #2f3140;
+    --color-secondary-green: #3BAF73;
+    --color-secondary-red: #D9534F
 }
 
 input::-webkit-outer-spin-button,
@@ -24,4 +26,25 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+button {
+    border: none;
+    background: inherit;
+    outline: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-main-white);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-main-black);
+    border-radius:10px;
 }
