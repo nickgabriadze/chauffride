@@ -15,9 +15,10 @@
 
         & button {
             padding: 5px;
-            font-size: medium;
+            font-size: large;
             color: var(--color-main-black);
             cursor: pointer;
+
             transition: border 300ms linear;
         }
 
